@@ -1,10 +1,11 @@
 import React from 'react';
+import SelectBox from './selectbox.js';
 
 class Filter extends React.Component {
   render() {
     return (
-        <div className="page-functions">
-            <h2 className="page-name">{this.props.title}</h2>
+        <div className="actions-wrap">
+          <SelectBox id="type" options={["Certificate", "Diploma", "Graduate", "Post Graduate", "PhD"]} />
         </div>
       )
     }
